@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Find Your Books</string>
+    <string name="botonPersona">Soy una persona</string>
+    <string name="botonTienda">Soy una tienda</string>
+    <string name="registerPersonTitle">Regístrate</string>
+    <string name="email">Correo electrónico</string>
+    <string name="name">Nombre</string>
+    <string name="password">Contraseña</string>
+    <string name="retypePassword">Repetir contraseña</string>
+    <string name="age">Edad</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="alreadyHaveAccount">Ya tengo una cuenta</string>
+    <string name="registerStoreTitle">Registra tu tienda y obten beneficios con compras online</string>
+    <string name="emailEmpresarial">Email empresarial</string>
+    <string name="nombreEmpresa">Nombre empresa</string>
+    <string name="addressEmpresa">Dirección</string>
+    <string name="Comenzar">¡Comenzar!</string>
+    <string name="buscoUn">Busco un...</string>
+    <string name="libro">Libro</string>
+    <string name="autor">Autor</string>
+    <string name="tema">Tema</string>
+    <string name="title_activity_inicia_sesion_persona">IniciaSesionPersona</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="ingresar">Ingresar</string>
+</resources>
