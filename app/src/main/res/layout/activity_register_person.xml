@@ -24,6 +24,7 @@
             android:layout_height="wrap_content">
 
             <EditText
+                android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/email"
@@ -34,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
+                android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/name"
@@ -45,6 +47,7 @@
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true">
             <EditText
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
@@ -56,6 +59,7 @@
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true">
             <EditText
+                android:id="@+id/etRepeatPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/retypePassword"
@@ -75,6 +79,7 @@
                 android:textSize="18sp"
                 android:layout_marginRight="10dp"/>
             <EditText
+                android:id="@+id/etAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="20"
