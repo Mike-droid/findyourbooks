@@ -20,6 +20,8 @@ class Conexion(context: Context?,
                 p0?.execSQL("CREATE TABLE IF NOT EXISTS usuario (idusuario INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nombre_usuario TEXT NOT NULL,correo_usuario TEXT NOT NULL UNIQUE, contrasena TEXT NOT NULL, edad INTEGER NOT NULL);")
 
                 p0?.execSQL("CREATE TABLE IF NOT EXISTS usuario_has_libro (usuario_idusuario INTEGER,libro_idlibro INTEGER NOT NULL, PRIMARY KEY (usuario_idusuario, libro_idlibro), CONSTRAINT fk_usuario_has_libro_usuario1 FOREIGN KEY (usuario_idusuario) REFERENCES usuario (idusuario) ON DELETE CASCADE ON UPDATE CASCADE, CONSTRAINT fk_usuario_has_libro_libro1 FOREIGN KEY (libro_idlibro) REFERENCES libro (idlibro) ON DELETE CASCADE ON UPDATE CASCADE);")
+
+                p0?.execSQL("CREATE TABLE IF NOT EXISTS tienda (idtienda INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nombre_tienda TEXT NOT NULL, direccion TEXT NOT NULL);")
             }
 
             override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {

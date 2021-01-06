@@ -14,34 +14,35 @@
         android:layout_height="match_parent">
 
         <Button
-            android:onClick="iniciarActivityPersona"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/primaryLightColor"
+            android:onClick="iniciarActivityPersona"
             android:padding="5dp"
             android:text="@string/botonPersona"
+            android:textSize="22sp"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.369"
-            android:textSize="22sp"
-            android:background="@color/primaryLightColor"/>
+            app:layout_constraintVertical_bias="0.392" />
 
         <Button
-            android:onClick="iniciarActivityTienda"
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@color/secondaryLightColor"
+            android:onClick="iniciarActivityTienda"
             android:padding="5dp"
             android:text="@string/botonTienda"
             android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.56"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.719"
-            android:background="@color/secondaryLightColor"/>
+            app:layout_constraintVertical_bias="0.717" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

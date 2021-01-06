@@ -29,4 +29,6 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="ingresar">Ingresar</string>
+    <string name="verTiendas">Ver tiendas</string>
+    <string name="listaTiendas">Lista de tiendas</string>
 </resources>
