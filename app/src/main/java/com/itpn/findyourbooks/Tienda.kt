@@ -1,6 +1,7 @@
 package com.itpn.findyourbooks
 
 import android.app.Dialog
+import android.content.Intent
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +29,7 @@ class Tienda : AppCompatActivity(), CellClickListener {
     }
 
     fun llenarListaTienda(){
-        for (i in 1..50){
+        for (i in 1..10){
             var c = Conexion(this,"biblioteca",null,1)
             val op1: SQLiteDatabase = c.readableDatabase
             val op2: SQLiteDatabase = c.readableDatabase
@@ -54,6 +55,8 @@ class Tienda : AppCompatActivity(), CellClickListener {
     }
 
     override fun onCellClickListener(data: TiendaClase) {
-        TODO("Not yet implemented")
+        val intent1 = Intent(this,MapsActivity::class.java)
+        intent1.putExtra("localizacion",data.nombreTienda)
+        startActivity(intent1)
     }
 }

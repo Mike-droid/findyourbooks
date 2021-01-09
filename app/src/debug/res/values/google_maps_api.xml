@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=94:E7:CB:E5:AF:D1:25:26:2B:57:DE:78:4A:D5:93:8A:9F:81:73:AD%3Bcom.itpn.findyourbooks
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.itpn.findyourbooks
+
+    SHA-1 certificate fingerprint:
+    94:E7:CB:E5:AF:D1:25:26:2B:57:DE:78:4A:D5:93:8A:9F:81:73:AD
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBbQmY4ZPN1vV3ikxX_fJ5yYcgC25Ev-3U</string>
+</resources>
