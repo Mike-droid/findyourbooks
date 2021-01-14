@@ -12,6 +12,7 @@ import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
+import com.google.android.material.snackbar.Snackbar
 
 class pantallaPrincipalPersona : AppCompatActivity() {
 
@@ -37,6 +38,12 @@ class pantallaPrincipalPersona : AppCompatActivity() {
         // SOLO EJECUTAR ESAS FUNCIONES LA PRIMERA VEZ QUE SE CORRE LA APP
         //******************************************************************//
 
+        val fab: View = findViewById(R.id.fab)
+        fab.setOnClickListener { view ->
+            Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null)
+                    .show()
+        }
     }
 
     //Menu de opciones
@@ -99,14 +106,6 @@ class pantallaPrincipalPersona : AppCompatActivity() {
             }
             (!rbTema.isChecked) && (!rbAutor.isChecked) && (!rbLibro.isChecked) -> {
                 Toast.makeText(this,"Una opción debe estar seleccionada",Toast.LENGTH_SHORT).show()
-                /*cursor = op.rawQuery("Select * from tienda",null)
-                if (cursor.moveToFirst()){
-                    do {
-                        resultado += "Tienda: ${cursor.getString(1)} , Dirección: ${cursor.getString(2)}"
-                    }while (cursor.moveToNext())
-                    tvResultado.text = resultado
-                    op.close()
-                }*/
             }
         }
     }
