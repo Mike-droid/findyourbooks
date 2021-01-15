@@ -39,10 +39,9 @@ class pantallaPrincipalPersona : AppCompatActivity() {
         //******************************************************************//
 
         val fab: View = findViewById(R.id.fab)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null)
-                    .show()
+        fab.setOnClickListener {
+            val intentPaypal = Intent(this,Paypal::class.java)
+            startActivity(intentPaypal)
         }
     }
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paypal</title>
+    <style>
+        @media screen and (max-width: 720px) {
+            body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            justify-content: center;
+            }
+
+            #p1,#p2{
+                margin: 0 auto;
+                margin-top: 20%;
+            }
+
+            #p1{
+                font-size: 2rem;
+            }
+
+            #p1 span{
+                font-weight: bold;
+            }
+
+            #p2{
+                font-size: 1.8rem;
+                color: darkblue;
+                background-color: #f79f38;
+                width: fit-content;
+                padding: 10px;
+                border-radius: 20px;
+                font-weight: bold;
+            }
+
+            #p3{
+                font-size: 1.4rem;
+            }
+
+            a{
+                font-size: 1.4rem;
+            }
+
+            a:link{
+                color: blue;
+                text-decoration: none;
+            }
+
+            a:visited{
+                text-decoration: none;
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+<p id="p1">Tu donación hará que este proyecto sea <span>mejor</span> y termine más rápido.</p>
+<br>
+<p id="p2">Dona a tráves de Paypal ¡Es muy sencillo y rápido!</p>
+<br>
+<p id="p3">Esta app fue creada por Miguel Ángel Reyes Moreno</p>
+<br>
+<a href="https://github.com/Mike-droid" target="_blank" id="">Perfil de github</a>
+
+<script>
+        let paypal = document.getElementById('p2');
+        paypal.onclick = function () {
+            alert("¡Gracias por donar!")
+        }
+    </script>
+</body>
+</html>
