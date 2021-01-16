@@ -53,9 +53,13 @@ class pantallaPrincipalPersona : AppCompatActivity() {
 
     //Acciones para los items del menú de opciones
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        intent = Intent(this,Tienda::class.java)
+        var intentOpcion:Intent
         when(item.itemId){
-            R.id.opcionTienda -> startActivity(intent)
+            R.id.opcionTienda -> {intentOpcion = Intent(this,Tienda::class.java)
+                startActivity(intentOpcion)}
+
+            R.id.opcionContactar -> {intentOpcion = Intent(this,Contactanos::class.java)
+                startActivity(intentOpcion)}
         }
         return super.onOptionsItemSelected(item)
     }
