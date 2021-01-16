@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="¿Tienes algo que decirnos? No dudes en llamarnos y con gusto te atenderemos"
         android:textColor="@color/secondaryTextColor"
-        android:textSize="25sp"/>
+        android:textSize="15sp"/>
 
     <LinearLayout
         android:gravity="center"
@@ -34,6 +34,34 @@
             android:text="+528787908628"
             android:textSize="25sp"
             android:textColor="#0000FF"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="También puedes dejarnos un correo electrónico"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="15sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_email_24"/>
+        <TextView
+            android:id="@+id/emailContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="miguelreyesmoreno@hotmail.com"
+            android:textColor="#0000FF"
+            android:textSize="12sp"/>
     </LinearLayout>
 
 </LinearLayout>
