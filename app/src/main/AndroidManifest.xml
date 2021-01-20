@@ -27,7 +27,6 @@
             android:name=".ui.login.IniciaSesionPersona"
             android:label="@string/title_activity_inicia_sesion_persona" />
         <activity android:name=".pantallaPrincipalPersona" />
-        <activity android:name=".RegisterStore" />
         <activity android:name=".RegisterPerson" />
         <activity android:name=".MainActivity" />
 

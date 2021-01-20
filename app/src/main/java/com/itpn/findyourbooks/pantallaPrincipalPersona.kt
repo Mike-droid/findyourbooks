@@ -12,7 +12,6 @@ import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
 
 class pantallaPrincipalPersona : AppCompatActivity() {
 
@@ -81,7 +80,7 @@ class pantallaPrincipalPersona : AppCompatActivity() {
                 cursor = op.rawQuery("select titulo, nombre_autor, nombre_tienda from libro join autor on autor_idautor = idautor join tienda on tienda_idtienda = idtienda where titulo like '%${etBusqueda.text}%'",null)
                 if (cursor.moveToFirst()){
                     do {
-                        resultado += "Libro: ${cursor.getString(0)} , Autor: ${cursor.getString(1)}, Tienda: ${cursor.getString(2)} \n\n"
+                        resultado += "Libro : ${cursor.getString(0)} \nAutor : ${cursor.getString(1)} \nTienda : ${cursor.getString(2)} \n\n"
                     }while (cursor.moveToNext())
                 }
                 tvResultado.text = resultado
@@ -91,7 +90,7 @@ class pantallaPrincipalPersona : AppCompatActivity() {
                 cursor = op.rawQuery("select nombre_autor,titulo from autor join libro on idautor = autor_idautor where nombre_autor like '%${etBusqueda.text}%'",null)
                 if (cursor.moveToFirst()){
                     do {
-                        resultado += "Autor : ${cursor.getString(0)}, Libro: ${cursor.getString(1)} \n\n"
+                        resultado += "Autor : ${cursor.getString(0)} \nLibro : ${cursor.getString(1)} \n\n"
                     }while (cursor.moveToNext())
                 }
                 tvResultado.text = resultado
@@ -101,7 +100,7 @@ class pantallaPrincipalPersona : AppCompatActivity() {
                 cursor = op.rawQuery("select nombre_tema,titulo from tema join libro on idtema = tema_idtema where nombre_tema like '%${etBusqueda.text}%'",null)
                 if (cursor.moveToFirst()){
                     do {
-                        resultado += "Tema : ${cursor.getString(0)}, Libro: ${cursor.getString(1)} \n\n"
+                        resultado += "Tema : ${cursor.getString(0)} \nLibro : ${cursor.getString(1)} \n\n"
                     }while (cursor.moveToNext())
                 }
                 tvResultado.text = resultado

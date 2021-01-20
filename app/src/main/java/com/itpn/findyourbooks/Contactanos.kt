@@ -18,7 +18,7 @@ class Contactanos : AppCompatActivity() {
         val botonLlamada:TextView
         botonLlamada = findViewById(R.id.phoneNumber)
         botonLlamada.setOnClickListener {
-            val callIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:8781154800"))
+            val callIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:8787908628"))
             startActivity(callIntent)
         }
 
